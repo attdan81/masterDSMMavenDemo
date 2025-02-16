@@ -1,12 +1,12 @@
 package com.example;
 
-import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.annotation.Testable;
 import org.mockito.Mockito;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class CalculatorServiceTest {
-    @Test
+    @Testable
     void testMockAddition() {
         Calculator mockCalculator = Mockito.mock(Calculator.class);
         when(mockCalculator.add(2, 3)).thenReturn(5);
